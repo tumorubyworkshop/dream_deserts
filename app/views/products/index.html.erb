@@ -1,0 +1,12 @@
+<h2>List of products of TUMO</h2>
+<div class="product">
+	<% @product.each do |product| %>
+		<h2><%= product.name %></h2>
+		<img src="<%= product.photo %>">
+		<h3><%= product.price %>AMD</h3>
+		<%= link_to "Edit", edit_product_path(product) %>
+		<%= link_to "Delete", product, method: :delete, data: {confirm: "Are you sure?" } %>
+	</div>
+	<hr>
+<% end %>
+<h4><%= link_to "New", new_product_path %></h4>
