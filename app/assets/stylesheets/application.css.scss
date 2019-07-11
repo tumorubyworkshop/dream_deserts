@@ -12,4 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require_rails-ijs
+ *= require_activestorage
+ *= require_turbolinks
+ *= require_jquery3
+ *= require_pooper
+ *= require_bootstrap-sprockets
  */
+
+@import 'bootstrap';
